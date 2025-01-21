@@ -45,7 +45,7 @@ export class FlipCardBackComponent {
   ];
 
   learningItems = [
-    'Guitar Fundamentals',
-    '4x4 Rubik\'s Cube Mastery'
+    'Guitar',
+    '4x4 Rubik\'s Cube'
   ];
 }
