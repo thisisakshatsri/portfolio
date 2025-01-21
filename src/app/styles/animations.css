@@ -1,0 +1,38 @@
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Timeline Animation */
+@keyframes timelineGrow {
+  from { height: 0; }
+  to { height: 100%; }
+}
+
+/* Dot Pulse Animation */
+@keyframes dotPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.timeline-animate {
+  animation: timelineGrow 0.5s ease forwards;
+}
