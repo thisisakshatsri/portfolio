@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <a href="/" class="logo-link" aria-label="Home">
-      <div class="logo">ASA</div>
+      <div class="logo"></div>
     </a>
   `,
   styles: [`
