@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-2xl font-bold mb-6 text-foreground relative inline-block;
+    @apply after:content-[''] after:absolute after:w-1/3 after:h-[2px] after:bg-primary after:bottom-0 after:left-0;
+    @apply sm:after:w-1/4;
+    @apply hover:after:w-1/2 after:transition-all after:duration-300;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-sm;
+  }
+  
+  .nav-link {
+    @apply relative px-3 py-2 text-foreground transition-colors hover:text-primary;
+    @apply after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-primary after:transition-all hover:after:w-full;
+  }
+  
+  /* Animation components */
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+  
+  .animate-on-scroll.animate-in-view {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .animate-slide-up {
+    @apply opacity-0 translate-y-8 transition-all duration-500 ease-out;
+  }
+  
+  .animate-slide-up.animate-in-view {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .stagger-container {
+    @apply transition-all duration-200;
+  }
+  
+  .stagger-item {
+    @apply opacity-0 translate-y-4 transition-all duration-500 ease-out;
+  }
+  
+  .stagger-item.animate-in-view {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-md;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .link-hover {
+    @apply relative inline-block overflow-hidden;
+    @apply after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 after:ease-out hover:after:origin-bottom-left hover:after:scale-x-100;
+  }
+  
+  .social-icon {
+    @apply text-muted-foreground transition-all duration-300 ease-in-out hover:text-primary hover:scale-110;
+  }
+  
+  /* Enhanced hover effects */
+  .image-hover {
+    @apply overflow-hidden;
+  }
+  
+  .image-hover img {
+    @apply transition-transform duration-500 ease-out;
+  }
+  
+  .image-hover:hover img {
+    @apply scale-110;
+  }
+  
+  .content-card {
+    @apply transition-all duration-300 hover:shadow-md hover:border-primary/40 hover:bg-background/80;
+  }
+  
+  .text-hover {
+    @apply transition-colors duration-300 hover:text-primary;
+  }
+  
+  .button-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-md active:scale-95;
+  }
+  
+  /* Enhanced Timeline styles with briefcase animation */
+  .timeline-dot {
+    @apply w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-md transition-all duration-300;
+  }
+  
+  .timeline-line {
+    @apply w-0.5 bg-primary/20 transition-all duration-300;
+  }
+  
+  .timeline-item:hover .timeline-dot {
+    @apply scale-125 shadow-md shadow-primary/20;
+  }
+  
+  .timeline-item:hover .timeline-line {
+    @apply bg-primary/50;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}

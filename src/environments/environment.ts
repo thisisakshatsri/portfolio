@@ -1,4 +1,0 @@
-export const environment = {
-  production: false,
-  spotifyToken: 'BQBjRkxDBuvJJFxjbroLGYz8TXqxW9GmJveDNppC8KF4WgNofzUoN2xnO-X45y0-rXhaqeVEzXZwIK5CUGRhBMV_A3AyRUrjJLEUsh3SqyHSLcchdaOirpUG8UJ13shkd5KPTqWL8i1_suyoZpoMN-jMObG-WQB_zLoXxR4zqrfbNIdM-MSe609eBg-4n9w_fDYTKEuBCnPBPf4Rh5zYAMvq-2bLRS95qggiz5NCP7kOKfMTYueGRg1RpK8NpB4qJ1rE38Gj3QLQinsmwXLai9meMM40IyMj'
-};
