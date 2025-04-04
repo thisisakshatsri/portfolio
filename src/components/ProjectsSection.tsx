@@ -5,6 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter }
 import { HoverCard, HoverCardTrigger, HoverCardContent } from './ui/hover-card';
 import { Button } from './ui/button';
 import { AspectRatio } from './ui/aspect-ratio';
+import mcaImage from "assets/mca_cube.png";
+import sortingV from "assets/sorting.png";
 
 type Project = {
   title: string;
@@ -97,25 +99,17 @@ const ProjectsSection = () => {
       title: "Sorting Visualizer",
       description: "An interactive web application that visualizes various sorting algorithms including Insertion Sort, Selection Sort, Bubble Sort, Quick Sort, and Merge Sort.",
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-      link: "https://github.com/thisisakshatsri", // Replace with actual link
-      github: "https://github.com/thisisakshatsri/sorting-visualizer", // Replace with actual GitHub link
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
+      link: "https://thisisakshatsri.github.io/sorting-visualizer",
+      github: "https://github.com/thisisakshatsri/sorting-visualizer", 
+      image: sortingV
     },
     {
       title: "MCA Cube",
       description: "A web application serving as a repository of useful resources for MCA students at HBTU, Kanpur. The platform has received over 25,000 page views.",
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-      link: "https://github.com/thisisakshatsri", // Replace with actual link
-      github: "https://github.com/thisisakshatsri/mca-cube", // Replace with actual GitHub link
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Portfolio Website",
-      description: "A modern portfolio website built with React and Three.js, featuring interactive 3D elements and showcasing professional experience and projects.",
-      technologies: ["React", "Three.js", "Tailwind CSS"],
-      link: "#", // Replace with actual link when deployed
-      github: "https://github.com/thisisakshatsri/portfolio", // Replace with actual GitHub link
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+      link: "https://thisisakshatsri.github.io/mca-cube/", 
+      github: "https://github.com/thisisakshatsri/mca-cube",
+      image: mcaImage
     }
   ];
 
