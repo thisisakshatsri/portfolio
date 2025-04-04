@@ -5,8 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter }
 import { HoverCard, HoverCardTrigger, HoverCardContent } from './ui/hover-card';
 import { Button } from './ui/button';
 import { AspectRatio } from './ui/aspect-ratio';
-import mcaImage from "assets/mca_cube.png";
-import sortingV from "assets/sorting.png";
+import mcaImage from "assets/m";
 
 type Project = {
   title: string;
@@ -101,7 +100,7 @@ const ProjectsSection = () => {
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       link: "https://thisisakshatsri.github.io/sorting-visualizer",
       github: "https://github.com/thisisakshatsri/sorting-visualizer", 
-      image: sortingV
+      image: "assets/"
     },
     {
       title: "MCA Cube",
@@ -109,7 +108,7 @@ const ProjectsSection = () => {
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       link: "https://thisisakshatsri.github.io/mca-cube/", 
       github: "https://github.com/thisisakshatsri/mca-cube",
-      image: mcaImage
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
     }
   ];
 
