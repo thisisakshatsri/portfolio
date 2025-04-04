@@ -46,19 +46,6 @@ const Footer = () => {
           </div>
           
           <div className="flex space-x-4">
-            {socialLinks.map((link) => (
-              <a 
-                key={link.label}
-                href={link.href}
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label={link.label}
-              >
-                {link.icon}
-              </a>
-            ))}
-            
             <button 
               onClick={scrollToTop}
               className="text-muted-foreground hover:text-primary transition-colors ml-2"
