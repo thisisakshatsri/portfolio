@@ -1,11 +1,9 @@
-
 import React from 'react';
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from './ui/card';
 import { HoverCard, HoverCardTrigger, HoverCardContent } from './ui/hover-card';
 import { Button } from './ui/button';
 import { AspectRatio } from './ui/aspect-ratio';
-import mcaImage from "assets/m";
 
 type Project = {
   title: string;
@@ -98,26 +96,26 @@ const ProjectsSection = () => {
       title: "Sorting Visualizer",
       description: "An interactive web application that visualizes various sorting algorithms including Insertion Sort, Selection Sort, Bubble Sort, Quick Sort, and Merge Sort.",
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-      link: "https://thisisakshatsri.github.io/sorting-visualizer",
-      github: "https://github.com/thisisakshatsri/sorting-visualizer", 
-      image: "assets/"
+      link: "https://github.com/thisisakshatsri", // Replace with actual link
+      github: "https://github.com/thisisakshatsri/sorting-visualizer", // Replace with actual GitHub link
+      image: "/lovable-uploads/309deeb5-97fb-4c94-933c-4e480b3cc7e2.png"
     },
     {
       title: "MCA Cube",
       description: "A web application serving as a repository of useful resources for MCA students at HBTU, Kanpur. The platform has received over 25,000 page views.",
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-      link: "https://thisisakshatsri.github.io/mca-cube/", 
-      github: "https://github.com/thisisakshatsri/mca-cube",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+      link: "https://github.com/thisisakshatsri", // Replace with actual link
+      github: "https://github.com/thisisakshatsri/mca-cube", // Replace with actual GitHub link
+      image: "/lovable-uploads/97b851ab-bd44-427f-af0f-f3a5f76b9d16.png"
     }
   ];
 
   return (
     <section id="projects" className="py-20 bg-secondary/30">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-4xl mx-auto px-4">
         <h2 className="section-title text-center md:text-left mb-10">Projects</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 stagger-container">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 stagger-container">
           {projects.map((project, index) => (
             <div key={index} className="stagger-item h-full">
               <ProjectCard project={project} />
