@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="200" fill="#3b82f6" opacity="0.03"/>
+  <circle cx="1100" cy="530" r="250" fill="#8b5cf6" opacity="0.03"/>
+  
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+  
+  <!-- Corner dots -->
+  <circle cx="60" cy="40" r="3" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="80" cy="40" r="3" fill="#3b82f6" opacity="0.3"/>
+  <circle cx="100" cy="40" r="3" fill="#3b82f6" opacity="0.2"/>
+  <circle cx="1100" cy="590" r="3" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="1120" cy="590" r="3" fill="#8b5cf6" opacity="0.3"/>
+  <circle cx="1140" cy="590" r="3" fill="#8b5cf6" opacity="0.2"/>
+  
+  <!-- Name -->
+  <text x="600" y="250" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="700" fill="#ffffff">Akshat Srivastava</text>
+  
+  <!-- Role -->
+  <text x="600" y="320" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" font-weight="500" fill="#3b82f6">Software Engineer</text>
+  
+  <!-- Tech stack -->
+  <text x="600" y="380" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#9ca3af">Java · Spring Boot · Python · AI/ML · React</text>
+  
+  <!-- Divider line -->
+  <rect x="500" y="420" width="200" height="1" fill="url(#accent)" opacity="0.5"/>
+  
+  <!-- Tagline -->
+  <text x="600" y="465" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#6b7280">Building AI-powered healthcare solutions at Optum</text>
+</svg>
